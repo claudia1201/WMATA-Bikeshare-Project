@@ -1,0 +1,193 @@
+*{ 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+}
+header{
+	height: 15vh;
+	width: 100%;
+	font-family: 'Arvo', serif;
+	font-size: 50px;
+	font-family: 'Bad Script', cursive;
+	text-align: center;
+	font-weight: bolder;
+}
+h1{
+	font-family: 'Arvo', serif;
+	font-weight: bold;
+	background-color: rgba(71,67,78,0.5);
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 10px;
+	width: 100%;
+	color: white;
+
+}
+
+body{
+	/*background-color: rgb(158,156,165);*/
+	background-image: url(Assets/maps.png);
+	background-size: 170% 170%;
+}
+.one{
+	
+	margin:3px; 
+}
+.stationBox{
+
+	float: left;
+	border-radius: 10px;
+	height: 80vh;
+	width: 32%;
+	background-image: url(Assets/metro.jpeg);
+	background-size: 100% 100%;
+	margin-left: 15px;
+	overflow:scroll;
+
+}
+.stationCount{
+	background-color: rgba(255,255,255,0.8);
+	width:87%;
+	padding: 3px 10px 3px 10px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+.stationCount span{
+	background-color: rgba(71,67,78,0.5);
+	width: 113px;
+  	padding-right: 4px;
+  	color: white;
+  	display: inline-block;
+  	text-align: right;
+  	margin-right: 5px;
+  	font-size: 16px;
+  	border-radius: 10px;
+}
+.stationBox div{
+	font-family: 'Orbitron', sans-serif;
+	line-height: 30px;
+	font-size: 14px;
+}
+.station-name{
+	display: inline-block;
+	width:170px;
+	vertical-align: top;
+}
+.station-data{
+	vertical-align: top;
+}
+.train{
+	text-align: center;
+	margin: 7px 0 7px 0;
+}
+.train-data {
+	text-align: left;
+	margin-bottom: 7px;
+	background-color: rgba(159,206,255,0.5);
+	border-radius: 10px;
+}
+
+.bikeBox{
+	float: left;
+	border-radius: 10px;
+	height: 80vh;
+	width: 32%;
+	background-image: url(Assets/bike.jpeg);
+	background-size: 100% 100%;
+	overflow:scroll;
+}
+.bikeCount{
+	background-color: rgba(255,255,255,0.8);
+	width:87%;
+	padding: 3px 10px 3px 10px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+.bikeCount span{
+	background-color: rgba(71,67,78,0.5);
+	width: 113px;
+  	padding-right: 4px;
+  	color: white;
+  	display: inline-block;
+  	text-align: right;
+  	margin-right: 5px;
+  	font-size: 16px;
+  	border-radius: 10px;
+}
+.bikeBox div{
+	font-family: 'Orbitron', sans-serif;
+	line-height: 30px;
+	font-size: 14px;
+}
+.name-data{
+	display: inline-block;
+	width:170px;
+	vertical-align: top;
+}
+.nam{
+	vertical-align: top;
+}
+.busBox{
+	float: left;
+	border-radius: 10px;
+	height: 80vh;
+	width: 32%;
+	background-image: url(Assets/bus.jpeg);
+	background-size: 100% 100%;
+	overflow:scroll;
+}
+.busCount{
+	background-color: rgba(255,255,255,0.8);
+	width:87%;
+	padding: 3px 10px 3px 10px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+.busCount span{
+	background-color: rgba(71,67,78,0.5);
+	width: 113px;
+  	padding-right: 4px;
+  	color: white;
+  	display: inline-block;
+  	text-align: right;
+  	margin-right: 5px;
+  	font-size: 16px;
+  	border-radius: 10px;
+}
+.busBox div{
+	font-family: 'Orbitron', sans-serif;
+	line-height: 30px;
+	font-size: 14px;
+}
+.stop-name{
+	display: inline-block;
+	width:170px;
+	vertical-align: top;
+}
+.stop{
+	vertical-align: top;
+}
+.bus{
+	text-align: center;
+	margin: 7px 0 7px 0;
+}
+.bus-data {
+	text-align: left;
+	margin-bottom: 10px;
+	background-color: rgba(159,206,255,0.5);
+	border-radius: 10px;
+}
+.bus-name{
+	display: inline-block;
+	width:170px;
+	vertical-align: top;
+}
+.bus-dir{
+	vertical-align: top;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>  
+	<title> Quick look up </title>
+	<link href="project.css" rel="stylesheet" />
+	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Orbitron:900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<template id="station">
+		{{#each this}}
+		<div class="stationCount">
+			<div class="name"><span>Name:</span>{{name}}</div>
+			<div class="address"><span class="station-data">Address:</span><div class="station-name">{{address}}</div></div>
+			<div class="distance"><span>Distance:</span>{{distance}}</div>
+			<div class="train"> Trains
+				{{#each train}}
+				<div class="train-data">
+					<div class="Line"><span>Line:</span>{{Line}}</div>
+					<div class="destination"><span>Destination:</span>{{destination}}</div>
+					<div class="Min"><span>Arrives:</span>{{Min}} min</div>
+				</div>
+				{{/each}}
+			</div> 
+	 	</div>
+	 	{{/each}}
+	</template>
+
+	<template id="bike">
+		{{#each this}}
+
+		<div class="bikeCount">
+			<div class="name"><span class="nam">Name:</span><div class="name-data">{{name}}</div></div>
+			<div class="nbBikes"><span>Bikes:</span>{{nbBikes}}</div>
+			<div class="nbEmptyDocks:"><span>Docks:</span>{{nbEmptyDocks}}</div>
+			<div class="distance"><span>Distance:</span>{{distance}}</div>
+		</div>
+
+		{{/each}}
+	</template>
+
+	<template id="buses">
+		{{#each this}}
+		<div class="busCount">
+			<div class="address"><span class="stop">Stop Location:</span><div class="stop-name">{{address}}</div></div>
+			<div class="distance"><span>Distance:</span>{{distance}}</div>
+			<div class="bus"> Destinations
+				{{#each bus}}
+				<div class="bus-data">
+					<div class="directionText"><span class="bus-dir">Destination:</span><div class="bus-name">{{directionText}}</div></div>
+					<div class="Minutes"><span>Arrives:</span>{{Minutes}}</div>
+					<div class="RouteID"><span>Rout ID:</span>{{RouteID}}</div>
+				</div>
+				{{/each}}
+			</div> 
+		</div>
+		{{/each}}
+	</template>
+
+	<div class="container">
+		<header> Nearby </header>
+		<div class="stationBox one"><h1>Station</h1></div>
+		<div class="bikeBox one"><h1>Bikeshare</h1></div>
+		<div class="busBox one"><h1>Bus</h1></div>
+	</div>
+
+
+	<script type="text/javascript" src="libs/underscore.js"></script>
+  	<script type="text/javascript" src="libs/handlebars.js"></script>
+  	<script type="text/javascript" src="libs/jquery.js"></script>
+  	<script src="project.js"></script>
+</body>
+</html> 
